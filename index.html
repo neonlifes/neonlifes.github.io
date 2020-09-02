@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta property="og:title" content="Hello!" />
+    <meta property="og:site_name" content="Georgia" />
+    <meta property="og:description"
+        content="Welcome to the site!" />
+    <meta property="og:image" content="images/profile.jpg" />
+    <meta name="description" content="Welcome to the site!" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(0deg, #36D1DC, #5B86E5);
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            color: white;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        a {
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container-wrapper {
+            flex: 1;
+        }
+
+        img.profile {
+            width: 132px;
+            height: 132px;
+            border-radius: 50%;
+        }
+
+        a.button {
+            display: block;
+            background-color: transparent;
+            margin: 20px 0;
+            font-size: 1.3rem;
+            padding: 10px;
+            text-decoration: none;
+            border: 2px solid white;
+        }
+
+        a.button:hover {
+            color: #5B86E5;
+            background-color: white;
+        }
+
+        h1.name {
+            margin: 0;
+            padding-bottom: 20px
+        }
+
+        footer {
+            text-align: center;
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        footer>a {
+            text-decoration: none;
+        }
+
+        div.slogan {
+            padding-top: 20px;
+            font-size: x-large;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .container-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 767px) {
+            h1.name {
+                padding-top: 20px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-wrapper">
+        <div class="container">
+            <!-- <h1 class="name">Hello!</h1> -->
+            <div>
+                <img class="profile" src="images/profile.jpg" alt="Georgia">
+            </div>
+            <div class="slogan">
+            	<hr />
+                რომელი ვერსიის გამოყენება გსურთ?
+                <hr />
+            </div>
+            <a href="https://neon.sunshinetime.site" class="button">სმარტფონისთვის &#128241</a>
+            <a href="https://neon.sunshinetime.site" class="button">კომპიუტერისთვის &#128421</a>
+        </div>
+    </div>
+    <footer>
+        © 2020. All rights reserved.
+    </footer>
+</body>
+
+</html>
